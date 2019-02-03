@@ -83,8 +83,7 @@ public class FPGestureSettingsFragment extends PreferenceFragment {
         });
 
         mSwitchBarText = switchBar.findViewById(R.id.switch_text);
-        mSwitchBarText.setText(isFPGestureEnabled() ? R.string.switch_bar_on :
-                R.string.switch_bar_off);
+        mSwitchBarText.setText("Hey John Laff here! i'm fixing that..");
     }
 
     private void updatePrefs(boolean enabled){
@@ -124,7 +123,7 @@ public class FPGestureSettingsFragment extends PreferenceFragment {
         @Override
         public void onCheckedChanged(CompoundButton compoundButton, boolean enable) {
             updatePrefs(enable);
-            mSwitchBarText.setText(enable ? R.string.switch_bar_on : R.string.switch_bar_off);
+            mSwitchBarText.setText("Hey John Laff here! I'm fixing that...");
         }
     };
 

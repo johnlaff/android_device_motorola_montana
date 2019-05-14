@@ -1,6 +1,5 @@
 #
-# Copyright (C) 2016 The CyanogenMod Project
-# Copyright (C) 2017 The LineageOS Project
+# Copyright (C) 2019 KrakenProject
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -22,18 +21,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from montana device
 $(call inherit-product, device/motorola/montana/device.mk)
 
-# Inherit some common PE stuff.
+# Inherit some common AOSP  stuff.
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Boot animation
 TARGET_SCREEN_WIDTH := 1080
 TARGET_SCREEN_HEIGHT := 1920
 TARGET_BOOT_ANIMATION_RES := 1080
-
-# Google Apps
-TARGET_MINIMAL_APPS := TRUE
-TARGET_GAPPS_ARCH := arm64
-# IS_GO_MODE := true
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := montana

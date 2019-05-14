@@ -1,4 +1,4 @@
-Copyright (C) 2017-2019 - The LineageOS Project.
+Copyright 2019 - KrakenProject
 
 Device configuration for Moto G5S (XT1792 XT1794 XT1795 XT1799-2)
 ===========================================

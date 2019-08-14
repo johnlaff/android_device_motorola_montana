@@ -23,8 +23,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n_mr1.mk
 $(call inherit-product, device/motorola/montana/device.mk)
 $(call inherit-product, vendor/motorola/montana/montana-vendor.mk)
 
-# Inherit from the common AOSP product configuration.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit from the common DU product configuration.
+$(call inherit-product, vendor/du/config/common_full_phone.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
@@ -39,7 +39,7 @@ TARGET_BOOT_ANIMATION_RES := 1080
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := montana
-PRODUCT_NAME := aosp_montana
+PRODUCT_NAME := du_montana
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 PRODUCT_AAPT_CONFIG := normal
 
@@ -53,7 +53,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="blueline-user 9 PQ3A.190801.002 5670241 release-keys"
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
-BUILD_FINGERPRINT := google/blueline/blueline:9/PQ3A.190801.002/5670241:user/release-keys \
+BUILD_FINGERPRINT := google/blueline/blueline:9/PQ3A.190801.002/5670241:user/release-keys
 VENDOR_BUILD_FINGERPRINT := google/blueline/blueline:9/PQ3A.190801.002/5670241:user/release-keys
 
 PRODUCT_SYSTEM_PROPERTY_BLACKLIST := \

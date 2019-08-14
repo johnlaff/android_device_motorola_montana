@@ -56,3 +56,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 BUILD_FINGERPRINT := google/blueline/blueline:9/PQ3A.190801.002/5670241:user/release-keys \
 VENDOR_BUILD_FINGERPRINT := google/blueline/blueline:9/PQ3A.190801.002/5670241:user/release-keys
 
+PRODUCT_SYSTEM_PROPERTY_BLACKLIST := \
+    ro.product.model \
+    ro.vendor.product.model

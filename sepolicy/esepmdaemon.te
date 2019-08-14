@@ -1,3 +1,1 @@
 binder_call(esepmdaemon, servicemanager);
-allow esepmdaemon default_android_service:service_manager add;
-

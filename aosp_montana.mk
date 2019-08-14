@@ -59,3 +59,7 @@ VENDOR_BUILD_FINGERPRINT := google/blueline/blueline:9/PQ3A.190801.002/5670241:u
 PRODUCT_SYSTEM_PROPERTY_BLACKLIST := \
     ro.product.model \
     ro.vendor.product.model
+
+#To maintain device identification
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRODUCT_NAME="Moto G5S"

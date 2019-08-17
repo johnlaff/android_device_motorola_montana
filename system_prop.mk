@@ -2,10 +2,6 @@
 # system.prop for montana
 #
 
-# Updater
-PRODUCT_PROPERTY_OVERRIDES += \
-    lineage.updater.uri=https://raw.githubusercontent.com/montanadevelopment/releases/master/lineage16.json
-
 # Audio
 PRODUCT_PROPERTY_OVERRIDES += \
     audio.deep_buffer.media=true \
@@ -103,7 +99,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.heapsize=384m \
     dalvik.vm.heapstartsize=8m \
     dalvik.vm.heaptargetutilization=0.75 \
-	dalvik.vm.boot-dex2oat-threads=8 \
+    dalvik.vm.boot-dex2oat-threads=8 \
     dalvik.vm.dex2oat-threads=8 \
     dalvik.vm.image-dex2oat-threads=8
 
@@ -187,8 +183,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Other
 PRODUCT_PROPERTY_OVERRIDES += \
-	ro.config.vc_call_vol_steps=7 \
-	ro.config.media_vol_steps=20
+    ro.config.vc_call_vol_steps=7 \
+    ro.config.media_vol_steps=20
 
 # Qualcomm
 PRODUCT_PROPERTY_OVERRIDES += \
